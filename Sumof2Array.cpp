@@ -6,7 +6,7 @@ int main() {
   printf("Enter the number of columns \n");
   scanf("%d", &c);
  int a[r][c], b[r][c], sum[r][c];
-  printf("Enter elements of first matrix:\n");
+  printf("Enter elements of the first matrix:\n");
   for (i = 0; i < r; i++) {
   
     for (j = 0; j < c; j++) 
@@ -14,7 +14,7 @@ int main() {
       scanf("%d", &a[i][j]);
     }
 
-  printf("Enter elements of 2nd matrix:\n");
+  printf("Enter elements of the 2nd matrix:\n");
   for (i = 0; i < r; i++) {
   
     for (j = 0; j < c;j++) 
@@ -26,14 +26,11 @@ int main() {
       sum[i][j] = a[i][j] + b[i][j];
     }
 
-  printf("Sum of two matrices: \n");
+  printf("Sum of the two matrices: \n");
   for (i = 0; i < r; i++) {
-  
     for (j = 0; j < c; j++) 
       printf("%d   ", sum[i][j]);
-        printf("\n\n");
-      
+        printf("\n\n"); 
     }
-
   return 0;
 }
